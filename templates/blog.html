@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    {% for el in notes %}
+        <div class="container">
+        <h3>{{ el.title }}</h3>
+        <p>{{ el.task }}</p>
+        </div>
+    {% endfor %}
+
+{% endblock content %}
